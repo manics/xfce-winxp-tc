@@ -35,7 +35,7 @@ do_packaging()
 
     # Build package now
     #
-    fakeroot dpkg-deb -v --build "${pkg_dir}"
+    fakeroot dpkg-deb --nocheck -v --build "${pkg_dir}"
 
     if [[ $? -gt 0 ]]
     then
