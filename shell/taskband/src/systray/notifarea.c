@@ -128,11 +128,10 @@ static void wintc_notification_area_init(
         WINTC_TYPE_NOTIFICATION_NETWORK
     );
 #endif
-    // Segfaults inside a container
-    // wintc_notification_area_append_component(
-    //     self,
-    //     WINTC_TYPE_NOTIFICATION_POWER
-    // );
+    wintc_notification_area_append_component(
+        self,
+        WINTC_TYPE_NOTIFICATION_POWER
+    );
     wintc_notification_area_append_component(
         self,
         WINTC_TYPE_NOTIFICATION_VOLUME
